@@ -1,4 +1,4 @@
-# SpringBoot
+# Esports Data API
 First spring boot project
 
 ### Getting started
