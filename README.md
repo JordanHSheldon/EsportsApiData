@@ -1,6 +1,5 @@
 # Esports Data API
-First spring boot project
+Java restful api built using spring boot framework. 
+DB: MongoDB
 
 ### Getting started
-download starter template from here:
-https://start.spring.io/
