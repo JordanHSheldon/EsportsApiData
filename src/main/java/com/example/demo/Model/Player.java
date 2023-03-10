@@ -8,15 +8,20 @@ import org.springframework.lang.NonNull;
 
 import java.util.UUID;
 
-public class Person {
+public class Player {
     private final UUID id;
-
     @NotBlank
     public String name;
+    public String lname;
+    @NotBlank
+    public String alias;
 
-    public Person(@JsonProperty("id") UUID id,@Valid @NonNull @NotEmpty @JsonProperty("name") String name) {
+
+    public Player(@JsonProperty("id") UUID id,@Valid @NonNull @NotEmpty @JsonProperty("name") String name,@Valid @NonNull @NotEmpty @JsonProperty("lname") String lname,@Valid @NonNull @NotEmpty @JsonProperty String alias) {
         this.id = id;
         this.name = name;
+        this.lname = lname;
+        this.alias = alias;
     }
 
     // getters
@@ -33,5 +38,3 @@ public class Person {
         this.name = name;
     }
 }
-
-
